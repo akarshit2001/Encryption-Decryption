@@ -1,6 +1,6 @@
 package Execution;
 
-public class Working {
+public class Encryption {
     public void encryption(String input, int shift) {
         String encryption = "";
         for (int i = 0; i < input.length(); i++) {
@@ -15,7 +15,7 @@ public class Working {
             } else if (Character.isLowerCase(input.charAt(i))) {
                 char character = input.charAt(i);
                 int b = (int) character;
-                int n = ((b + shift - 97) % 26 + 94);
+                int n = ((b + shift - 97) % 26 + 96);
 
                 encryption = encryption + Character.toString((char) n);
 
