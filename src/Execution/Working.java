@@ -1,7 +1,7 @@
 package Execution;
 
 public class Working {
-    public String encryption(String input, int shift) {
-        return null;
+    public void encryption(String input, int shift) {
+
     }
 }
