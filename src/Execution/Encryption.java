@@ -19,6 +19,8 @@ public class Encryption {
                 encryption = encryption + Character.toString((char) n);
 
 
+            } else {
+                encryption = encryption + Character.toString(input.charAt(i));
             }
         }
         return encryption;

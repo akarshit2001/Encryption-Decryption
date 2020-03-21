@@ -22,6 +22,8 @@ public class Decryption {
                 decryption = decryption + Character.toString((char) n);
 
 
+            } else {
+                decryption = decryption + Character.toString(encrypt.charAt(i));
             }
         }
         return decryption;
