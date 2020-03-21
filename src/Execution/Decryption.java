@@ -4,26 +4,26 @@ public class Decryption {
 
 
     public String decryption(String encrypt, int shift) {
-        String encryption = "";
+        String decryption = "";
         for (int i = 0; i < encrypt.length(); i++) {
             if (Character.isUpperCase(encrypt.charAt(i))) {
                 char character = encrypt.charAt(i);
                 int b = (int) character;
-                int n = ((b + shift - 65) % 26 + 65);
+                int n = ((b - shift - 65) % 26 + 65);
 
-                encryption = encryption + Character.toString((char) n);
+                decryption = decryption + Character.toString((char) n);
 
                 // System.out.println(encryption);
             } else if (Character.isLowerCase(encrypt.charAt(i))) {
                 char character = encrypt.charAt(i);
                 int b = (int) character;
-                int n = ((b + shift - 97) % 26 + 97);
+                int n = ((b - shift - 97) % 26 + 97);
 
-                encryption = encryption + Character.toString((char) n);
+                decryption = decryption + Character.toString((char) n);
 
 
             }
         }
-        return encryption;
+        return decryption;
     }
 }

@@ -1,27 +1,26 @@
 package Execution;
 
 public class Encryption {
-    public void encryption(String input, int shift) {
+    public String encryption(String input, int shift) {
         String encryption = "";
         for (int i = 0; i < input.length(); i++) {
             if (Character.isUpperCase(input.charAt(i))) {
                 char character = input.charAt(i);
                 int b = (int) character;
-                int n = ((b + shift - 65) % 26 + 64);
-
+                int n = ((b + shift - 65) % 26 + 65);
                 encryption = encryption + Character.toString((char) n);
 
                 // System.out.println(encryption);
             } else if (Character.isLowerCase(input.charAt(i))) {
                 char character = input.charAt(i);
                 int b = (int) character;
-                int n = ((b + shift - 97) % 26 + 96);
 
+                int n = ((b + shift - 97) % 26 + 97);
                 encryption = encryption + Character.toString((char) n);
 
 
             }
         }
-        System.out.println(encryption);
+        return encryption;
     }
 }
