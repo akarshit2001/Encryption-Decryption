@@ -11,9 +11,9 @@ public class Main {
         Encryption wc = new Encryption();
         Decryption dc = new Decryption();
         System.out.println("Enter the String");
-        String input = sc.next();
+        String input = sc.nextLine();
         System.out.println("Enter the no. that you want to shift ");
-        sc.nextLine();
+        System.out.println(input);
         int n = sc.nextInt();
         System.out.println("Encryption :-");
         String encrypt = wc.encryption(input, n);
