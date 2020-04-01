@@ -8,6 +8,9 @@ public class Main {
         int testIndexKey=index(args,"-key");
         String finalMode;
         try{
+            if(testIndexMode==-1){
+                throw new NullPointerException();
+            }
             finalMode=args[testIndexMode+1];}
         catch (NullPointerException e){
             finalMode ="enc";
@@ -17,7 +20,11 @@ public class Main {
 
         int finalKey;
         try {
+            if (testIndexKey==-1){
+                throw new NullPointerException();
+            }
             finalKey = Integer.parseInt(args[testIndexKey + 1]);
+
         }
         catch (NullPointerException e){
             finalKey=0;
