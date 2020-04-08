@@ -1,7 +1,9 @@
 #  Encryption-Decryption
 This project is based on the cryptography technique.
 
-Encryption is the process to convert your sensitive data into cypher text .
+This technique is used between message send between sender and reciever.
+
+Encryption is the process to convert your  data into cypher text to prevent from unauthorized access.
 
 Decryption is the process to convert cypher text into the actual data.
 
@@ -21,7 +23,7 @@ Run configuration examples for encryption
 
 java Main -mode enc -key 5 -data "Welcome to hyperskill!"
 
-Encryption output example
+Encryption output example:-
 
 \jqhtrj%yt%m~ujwxpnqq&
 
