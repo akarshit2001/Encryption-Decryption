@@ -19,7 +19,7 @@ It is  done through the shifting technique of cryptography.
 
   Keep in mind that arguments may be in different order. For example, -mode enc may be at the end, at the beginning or in the middle of arguments array.
 
-#Run configuration examples for encryption
+****Run configuration examples for encryption
 
 java Main -mode enc -key 5 -data "Welcome to hyperskill!"
 
@@ -27,7 +27,7 @@ Encryption output example:-
 
 \jqhtrj%yt%m~ujwxpnqq&
 
-#Run configuration examples for decryption
+****Run configuration examples for decryption
 
 java Main -key 5 -data "\jqhtrj%yt%m~ujwxpnqq&" -mode dec
 
